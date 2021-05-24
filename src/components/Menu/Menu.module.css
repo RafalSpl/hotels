@@ -1,0 +1,15 @@
+.menu {
+    list-style-image: none;
+    
+    text-align: left;
+}
+
+.menuItem {
+    display: inline-block;
+}
+
+.menuContainer {
+    border: 1px solid #cdcdcd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

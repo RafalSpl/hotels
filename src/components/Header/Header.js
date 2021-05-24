@@ -7,9 +7,9 @@ function Header() {
         <div className="container">
             <header className={styles.header}>
                 <Searchbar />
-        </header>
+            </header>
         </div>
-        
+
     )
 }
 

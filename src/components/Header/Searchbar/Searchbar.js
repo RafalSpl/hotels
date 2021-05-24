@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Searchbar = () => {
-    return ( 
+    const [term, setTerm] = useState('');
+    const search = () => {
+        console.log('szukaj', term)
+    }
+    const updateTerm = (e) => {
+        setTerm(e.target.value);
+        console.log(e.target.value)
+    }
+    return (
         <div className="row">
             <div className="input-group">
-                <input type="text" className="form-control" placeholder="Szulaj" />
-                <button className="btn btn-primary">Szukaj</button>
+                <input
+                    value={term}
+                    onChange={e => setTerm(e.target.value)}
+                    type="text"
+                    className="form-control"
+                    placeholder="Szulaj" />
+                <button
+                    onClick={search}
+                    className="btn btn-primary">
+                    Szukaj
+                </button>
             </div>
         </div>
     )

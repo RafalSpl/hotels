@@ -1,6 +1,8 @@
 .header {
-  height: 50px;
-  background-color: #cdcdcd;
+  height: 80px;
+  padding: 80px;
+  background: url(../../assets/images/header.jpg) center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
